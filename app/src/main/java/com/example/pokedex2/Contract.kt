@@ -20,6 +20,12 @@ interface Contract {
             fun registerUser(vusername: String, vpassword: String, vpassword2: String)
         }
 
+        interface Pokedex{
+            fun nextPokemon()
+            fun backPokemon()
+            fun obtainPokemon()
+            fun setPokemon()
+        }
 
     }
 
@@ -35,6 +41,14 @@ interface Contract {
         }
 
         interface DashBoard{
+            fun goToPokedex()
+            fun goToCatch()
+        }
+
+        interface Pokedex{
+        }
+
+        interface Catch{
 
         }
 
