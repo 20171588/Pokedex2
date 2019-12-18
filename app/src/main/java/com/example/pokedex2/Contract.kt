@@ -1,7 +1,6 @@
 package com.example.pokedex2
 
-import android.content.Context
-import android.widget.EditText
+import com.example.pokedex2.Model.Pokemon
 
 interface Contract {
 
@@ -23,8 +22,15 @@ interface Contract {
         interface Pokedex{
             fun nextPokemon()
             fun backPokemon()
-            fun obtainPokemon()
             fun setPokemon()
+
+        }
+
+        interface Catch{
+            fun updateData(list: ArrayList<Pokemon>, position:Int)
+        }
+        interface CatchIt{
+
         }
 
     }
@@ -46,10 +52,16 @@ interface Contract {
         }
 
         interface Pokedex{
+            fun goToMenu()
         }
 
         interface Catch{
+            fun goToCatchIt()
+        }
 
+        interface CatchIt{
+            fun goToPokedex()
+            fun catch(position: Int)
         }
 
     }

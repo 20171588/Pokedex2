@@ -4,6 +4,7 @@ class PokedexModel {
 
     var index : Int = 0
     var pokemonList : ArrayList<Pokemon> = ArrayList()
-    var actualPokemon : Pokemon = pokemonList[index]
+    //var actualPokemon : Pokemon = pokemonList[index]
+
 
 }

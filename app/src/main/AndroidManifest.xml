@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.pokedex2">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name=".Model.LoginModel"
         android:allowBackup="true"
@@ -15,6 +17,7 @@
         <activity android:name=".View.DashboardView"/>
         <activity android:name=".View.PokedexView"/>
         <activity android:name=".View.CatchView"/>
+        <activity android:name=".View.CatchItView"/>
         <activity android:name=".View.LoginView">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/catchit"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="56dp"
+        android:layout_marginTop="12dp"
+        android:textStyle="bold"
+        android:text="Catch It" />
+
+    <ImageView
+        android:id="@+id/pokecatch"
+        android:layout_gravity="center"
+        android:fitsSystemWindows="true"
+        android:layout_width="200dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="360dp"
+        tools:srcCompat="@tools:sample/avatars" />
+</LinearLayout>

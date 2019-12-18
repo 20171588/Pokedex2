@@ -1,8 +1,12 @@
 package com.example.pokedex2.Model
 
-class Pokemon {
+import io.realm.RealmObject
 
-    lateinit var name : String
-    lateinit var url : String
+open class Pokemon : RealmObject() {
 
+    var name : String = ""
+    var url : String = ""
+    var base_experience = ""
+    var type : String = ""
+    var sprite : String = ""
 }

@@ -9,7 +9,7 @@ class LoginModel : Application(){
     override fun onCreate() {
         super.onCreate()
         Realm.init(this)
-        var config =  RealmConfiguration.Builder().build()
+        var config =  RealmConfiguration.Builder().deleteRealmIfMigrationNeeded().build()
         Realm.setDefaultConfiguration(config)
     }
 }
